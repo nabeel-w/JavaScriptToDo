@@ -32,7 +32,7 @@ toSubmit.addEventListener("click", () => {
         const updatedData = JSON.stringify(parsedData);
         localStorage.setItem('myData', updatedData);
     }
-    window.location.href = "To-Do.html";
+    window.location.href = "index.html";
 })
 function addList(parsedData) {
     for (let index = 0; index < parsedData.length; index++) {
@@ -59,7 +59,7 @@ function deleteList(id){
             parsedData.splice(index,1);
             const jsonData = JSON.stringify(parsedData);
             localStorage.setItem('myData', jsonData);
-            window.location.href = "To-Do.html";
+            window.location.href = "index.html";
         }
     }
 }
@@ -74,7 +74,7 @@ function editList(id){
             parsedData[index].task=title;
             const jsonData = JSON.stringify(parsedData);
             localStorage.setItem('myData', jsonData);
-            window.location.href = "To-Do.html";
+            window.location.href = "index.html";
         }
     }
 
